@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Owais Sarwar - ASP.NET Core & C# Backend Developer Portfolio. Focused on C#, ASP.NET Core MVC, Entity Framework Core, and SQL Server.">
+    <title>Owais Sarwar | ASP.NET Core & C# Backend Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-header" id="navbar">
+        <div class="container navbar-container">
+            <a href="#home" class="logo">
+                Owais<span class="gradient-text">Sarwar</span>
+            </a>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get in Touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge hero-badge">
+                        <span class="badge-dot"></span>
+                        ✨ Open to Entry-Level & Internship Roles
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Owais Sarwar</span>
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        ASP.NET Core & C# Backend Developer
+                    </h2>
+
+                    <p class="hero-bio">
+                        Motivated Backend Developer focused on building web applications using C#, ASP.NET Core MVC, Entity Framework Core, and SQL Server.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-code"></i> View Projects
+                        </a>
+                        <a href="https://wa.me/923132599001" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
+                        </a>
+                        <a href="https://github.com/owaissarwar" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+
+                    <div class="hero-highlights">
+                        <div class="highlight-badge">
+                            <i class="fa-solid fa-graduation-cap highlight-icon"></i>
+                            <span>Intermediate (Pre-Engg)</span>
+                        </div>
+                        <div class="highlight-badge">
+                            <i class="fa-solid fa-building-columns highlight-icon"></i>
+                            <span>Upcoming BSCS Student</span>
+                        </div>
+                        <div class="highlight-badge">
+                            <i class="fa-solid fa-database highlight-icon"></i>
+                            <span>C# & SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section education-section" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Academics</span>
+                    <h2 class="section-title">Education & Academic Background</h2>
+                    <p class="section-description">My academic journey and upcoming educational milestones.</p>
+                </div>
+
+                <div class="education-grid">
+                    <!-- Card 1 -->
+                    <div class="card education-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="timeline-badge">Completed</span>
+                            <h3 class="card-title">Intermediate in Pre-Engineering</h3>
+                            <p class="institution">Superior Science & Commerce College, Karachi</p>
+                            <p class="card-text">Focused on mathematics, physics, and analytical problem-solving foundational to software development.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card education-card border-glow">
+                        <div class="card-icon accent">
+                            <i class="fa-solid fa-university"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="timeline-badge upcoming">Admissions Oct 2026</span>
+                            <h3 class="card-title">Bachelor of Science in Computer Science (BSCS)</h3>
+                            <p class="institution">Federal Urdu University (FUUAST), Karachi</p>
+                            <p class="card-text">Enrolling to pursue computer science theory, backend engineering, software architecture, and algorithm design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-description">Practical applications built to solve real-world problems with backend reliability.</p>
+                </div>
+
+                <!-- Dynamically rendered via script.js -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- JS injects project cards here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-description">Core technologies, frameworks, and software development tools in my stack.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Backend -->
+                    <div class="card skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-code text-cyan"></i> C#</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-cubes text-cyan"></i> ASP.NET Core MVC</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-diagram-project text-cyan"></i> Entity Framework Core</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-network-wired text-cyan"></i> REST APIs</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Database -->
+                    <div class="card skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <h3>Database Management</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-hard-drive text-cyan"></i> Microsoft SQL Server</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-table text-cyan"></i> SQL Queries & Relational DB</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 82%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Frontend & Web -->
+                    <div class="card skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h3>Frontend & Web</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-html5 text-cyan"></i> HTML5</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-css3-alt text-cyan"></i> CSS3</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-js text-cyan"></i> JavaScript</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-bootstrap text-cyan"></i> Bootstrap</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Tools -->
+                    <div class="card skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                            <h3>Development Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-git-alt text-cyan"></i> Git</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 78%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-github text-cyan"></i> GitHub</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-code-merge text-cyan"></i> Visual Studio</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-file-excel text-cyan"></i> MS Excel</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-description">Feel free to reach out for opportunities, collaborations, or questions.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Cards / Info -->
+                    <div class="contact-info">
+                        <a href="https://wa.me/923132599001" target="_blank" rel="noopener noreferrer" class="contact-card wa-card">
+                            <div class="contact-icon wa-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Direct WhatsApp</span>
+                                <span class="contact-value">+92 313 2599001</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+                        </a>
+
+                        <a href="mailto:owaissarwar000@gmail.com" class="contact-card">
+                            <div class="contact-icon mail-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email Address</span>
+                                <span class="contact-value">owaissarwar000@gmail.com</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+                        </a>
+
+                        <div class="contact-card static-card">
+                            <div class="contact-icon loc-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Karachi, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Simple Form -->
+                    <div class="card contact-form-card">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Hi Owais, I'd like to discuss a project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                            <div id="form-toast" class="form-toast hidden"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">© 2026 Owais Sarwar. Built with HTML, CSS, and JS.</p>
+            <div class="footer-links">
+                <a href="https://github.com/owaissarwar" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://wa.me/923132599001" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
