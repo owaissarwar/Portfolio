@@ -5,6 +5,15 @@
 
 // 1. Projects Data Array
 const projects = [
+
+    {
+    title: "E-Commerce Web Application",
+    status: "In Progress",
+    description: "An e-commerce platform built with ASP.NET Core MVC featuring modular category management, product cataloging, secure image file storage, and relational database operations.",
+    techStack: ["C#", "ASP.NET Core MVC", "EF Core", "SQL Server", "Bootstrap"],
+    githubLink: "https://github.com/owaissarwar/E-Commerce-Website",
+    icon: "fa-solid fa-cart-shopping"
+}
     {
         title: "Employee CRUD Application",
         status: "Completed",
@@ -14,13 +23,13 @@ const projects = [
         icon: "fa-solid fa-users-gear"
     },
     {
-        title: "Railway Reservation Management System",
-        status: "🚧 Work in Progress",
-        description: "A comprehensive booking and schedule management system for railways.",
-        techStack: ["C#", "ASP.NET Core", "EF Core", "SQL Server"],
-        githubLink: "https://github.com/owaissarwar",
-        icon: "fa-solid fa-train"
-    }
+    title: "Railway Management System",
+    status: "Completed",
+    description: "A web application featuring user authentication (Login/Signup), basic database CRUD operations, and data viewing functionality.",
+    techStack: ["C#", "ASP.NET Core", "EF Core", "SQL Server"],
+    githubLink: "https://github.com/owaissarwar",
+    icon: "fa-solid fa-train"
+}
 ];
 
 // 2. Render Projects Dynamically into DOM
