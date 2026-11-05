@@ -5,15 +5,14 @@
 
 // 1. Projects Data Array
 const projects = [
-
     {
-    title: "E-Commerce Web Application",
-    status: "In Progress",
-    description: "An e-commerce platform built with ASP.NET Core MVC featuring modular category management, product cataloging, secure image file storage, and relational database operations.",
-    techStack: ["C#", "ASP.NET Core MVC", "EF Core", "SQL Server", "Bootstrap"],
-    githubLink: "https://github.com/owaissarwar/E-Commerce-Website",
-    icon: "fa-solid fa-cart-shopping"
-}
+        title: "E-Commerce Web Application",
+        status: "In Progress",
+        description: "An e-commerce platform built with ASP.NET Core MVC featuring modular category management, product cataloging, secure image file storage, and relational database operations.",
+        techStack: ["C#", "ASP.NET Core MVC", "EF Core", "SQL Server", "Bootstrap"],
+        githubLink: "https://github.com/owaissarwar/E-Commerce-Website",
+        icon: "fa-solid fa-cart-shopping"
+    },
     {
         title: "Employee CRUD Application",
         status: "Completed",
@@ -23,13 +22,13 @@ const projects = [
         icon: "fa-solid fa-users-gear"
     },
     {
-    title: "Railway Management System",
-    status: "Completed",
-    description: "A web application featuring user authentication (Login/Signup), basic database CRUD operations, and data viewing functionality.",
-    techStack: ["C#", "ASP.NET Core", "EF Core", "SQL Server"],
-    githubLink: "https://github.com/owaissarwar",
-    icon: "fa-solid fa-train"
-}
+        title: "Railway Management System",
+        status: "Completed",
+        description: "A web application featuring user authentication (Login/Signup), basic database CRUD operations, and data viewing functionality.",
+        techStack: ["C#", "ASP.NET Core", "EF Core", "SQL Server"],
+        githubLink: "https://github.com/owaissarwar",
+        icon: "fa-solid fa-train"
+    }
 ];
 
 // 2. Render Projects Dynamically into DOM
@@ -135,7 +134,22 @@ function setupScrollActiveNav() {
         });
     });
 }
-
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        
+        // Agar link internal section ka hai (# se shuru hota hai)
+        if (targetId && targetId.startsWith('#')) {
+            e.preventDefault();
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+});
 // 5. Contact Form Submission Handler with EmailJS
 function setupContactForm() {
     const contactForm = document.getElementById("contact-form");
@@ -175,6 +189,9 @@ function setupContactForm() {
                     formToast.textContent = "Failed to send message via EmailJS. Please check credentials.";
                     formToast.className = "form-toast success";
                     contactForm.reset();
+                    setTimeout(() => {
+                        formToast.className = "form-toast hidden";
+                    }, 5000);
                 });
         } else {
             // Fallback for demonstration when placeholder keys are used
